@@ -1,0 +1,264 @@
+:root {
+  --bg-color: rgb(248, 245, 242);
+}
+
+body {
+  margin: 2em 0 0 2em;
+  font-family: 'EB Garamond', serif;
+  font-size:1.25em;
+  background-color: var(--bg-color);
+  background-image: url(images/bg_moonboys30.png);
+  background-position: center left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+a {
+  /*text-underline-offset: .25em;
+  text-decoration:underline dashed #666;*/
+  color: #000000;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+#title,
+#title a {
+  color:rgb(182, 63, 63);
+  font-family: 'EB Garamond', serif;
+  font-size:2.25rem;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  position:relative;
+  left:2.5em;
+}
+
+#logo {
+  visibility: hidden;
+  width: 4em;
+  position:fixed;
+  top:1em;
+  left:2em;
+  padding:1em 0 0 0;
+  z-index:3;
+}
+
+#bigasslogo {
+  z-index:5;
+  /*background-color: var(--bg-color); */
+  padding-top:0;
+}
+
+.content {
+  margin:2em 0 2em 1em;
+  width:36em;
+  line-height:1.5em;
+}
+
+.content a {
+  background-color: rgba(255, 240, 155, 0.3);
+}
+
+.content p::before {
+  content:"¶ ";
+}
+
+.content::after {
+  font-size:2em;
+  content:"⁜";
+}
+
+.content p::first-line {
+  color:rgb(224, 18, 18);
+  /* text-indent:2em; */
+  text-transform:uppercase;
+}
+
+@media (max-width:700px) {
+  .content {
+    width: 90%;
+    margin-right:2em;
+    margin-left:auto;
+  }
+  .flex-menu {
+    margin-right:2em;
+  }
+  #logo {
+    width: 4em;
+    position:fixed;
+    margin-top:1em;
+    margin-right:2em;
+  }
+  #title {
+    visibility: hidden;
+    position:absolute;
+    left:1em;
+    top:1em;
+  }
+}
+
+.inwhich {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  margin-top:1em;
+  width:85%;
+  font-style:italic;
+}
+
+.inwhich::first-line {
+  text-transform:capitalize;
+}
+
+.date {
+  /* margin:2em 2em; */
+  text-transform:uppercase;
+  background-color: rgba(255, 221, 221, 0.4);
+  font-weight:600;
+  font-size:0.8em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.date a {
+  background-color: red;
+}
+
+.blurb::after {
+  content:"";
+  font-size:1rem;
+}
+
+a .blurb {
+  text-decoration:none;
+  background-color: var(--bg-color);
+}
+
+.asterism {
+  text-align:center;
+  margin-bottom:1em;
+ /* content:"⁂"; */
+}
+
+.spine-images, #bigasslogo {
+  position:relative;
+  left:0;
+  max-width: 700px;
+  margin-right:2em;
+}
+
+.thepage {
+  max-height: 2700px;
+}
+
+.flex-menu {
+  position:sticky;
+  top:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  background-color: rgba(0, 0, 0, 0.9);
+  color:rgb(255, 255, 255);
+  font-family: "Anton", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom:.25em;
+  max-width: 700px;
+  z-index:10;
+}
+
+.flex-logo img {
+  height:2em;
+  width:2em;
+  position:absolute;
+  top:-.25em;
+  right:.5em;
+}
+
+/* FLEXBOX MIMICKING HORIZONTAL SPINES 
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  background-color: rgba(0, 0, 0, 0.75);
+  color:rgb(255, 255, 255);
+  font-family: "Anton", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding:1em 2em;
+  gap:1em;
+  position:relative;
+  left:-1em;
+}
+
+.flex-author, .flex-title {
+  text-transform:uppercase;
+}
+
+.flex-author {
+  text-align:left;
+}
+
+.flex-title {
+  font-size: 1em;
+}
+
+.wilde-spine {
+  background-color: #ffcc00ff;
+  color:#554400ff;
+}
+
+.wilde-title {
+  font-size: 2em;
+}
+
+.lud-spine {
+  background-color: #f9f0dfff;
+  color:#d32e4dff;
+}
+
+.lud-title {
+  font-size: 2.5em;
+}
+
+.gibran-spine {
+  background-color: #cec2a7ff;
+  color:#927070ff;
+}
+
+.fraser-spine {
+  background-color: #a6c998ff;
+  color:#e73f57ff;
+  padding:0em 2em;
+}
+
+.moby-spine {
+  background-color: rgb(255, 255, 255);
+  color:#366573ff;
+}
+
+.moby-title {
+  font-size: 3em;
+}
+
+.venus-spine {
+  background-color: #ff6453ff;
+  color:rgb(255, 255, 255);
+}
+
+.vampyre-spine {
+  background-color: #2b0404ff;
+  color:#fb0000ff;
+  padding:0em 2em;
+}
+*/
