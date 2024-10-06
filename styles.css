@@ -3,14 +3,16 @@
 }
 
 body {
-  margin: 2em 0 0 2em;
   font-family: 'EB Garamond', serif;
   font-size:1.25em;
   background-color: var(--bg-color);
   background-image: url(images/bg_moonboys30.png);
-  background-position: center left;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin:0;
 }
 
 a {
@@ -50,7 +52,6 @@ img {
 #bigasslogo {
   z-index:5;
   /*background-color: var(--bg-color); */
-  padding-top:0;
 }
 
 .content {
@@ -84,9 +85,6 @@ img {
     margin-right:2em;
     margin-left:auto;
   }
-  .flex-menu {
-    margin-right:2em;
-  }
   #logo {
     width: 4em;
     position:fixed;
@@ -98,6 +96,12 @@ img {
     position:absolute;
     left:1em;
     top:1em;
+  }
+}
+
+@media (max-width:400px) {
+  .flex-menu {
+    font-size: 0.75em;
   }
 }
 
@@ -143,15 +147,20 @@ a .blurb {
  /* content:"⁂"; */
 }
 
-.spine-images, #bigasslogo {
-  position:relative;
-  left:0;
+.page-content, #bigasslogo {
   max-width: 700px;
-  margin-right:2em;
+  align-items: center;
+  justify-content: center;
 }
 
-.thepage {
-  max-height: 2700px;
+.page-content {
+  padding:0;
+  margin:auto;
+  display:block;
+}
+
+.spine-images {
+  font-size: 0;
 }
 
 .flex-menu {
@@ -170,6 +179,7 @@ a .blurb {
   font-style: normal;
   margin-bottom:.25em;
   max-width: 700px;
+  gap:0;
   z-index:10;
 }
 
