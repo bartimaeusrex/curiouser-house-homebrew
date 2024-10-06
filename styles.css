@@ -6,7 +6,7 @@ body {
   font-family: 'EB Garamond', serif;
   font-size:1.25em;
   background-color: var(--bg-color);
-  background-image: url(images/bg_moonboys30.png);
+  background-image: url(images/bg_moonboys30b.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -166,6 +166,10 @@ a .blurb {
 .flex-menu {
   position:sticky;
   top:0;
+  z-index:10;
+}
+
+.flex-menu, .flex-covers {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -177,10 +181,18 @@ a .blurb {
   font-family: "Anton", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin-bottom:.25em;
+  margin:0;
   max-width: 700px;
   gap:0;
-  z-index:10;
+}
+
+.flex-menu a {
+  background-color:none;
+  color:rgb(255, 255, 255);
+}
+
+.flex-covers {
+  background:none;
 }
 
 .flex-logo img {
