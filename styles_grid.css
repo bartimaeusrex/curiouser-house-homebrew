@@ -99,6 +99,22 @@ img {
   }
 }
 
+@media (max-width:680px) {
+  .grid-bookinfo {
+    width:80%;
+    height:350px; /* << not doing SHIT... */
+    position:absolute;
+    left:0;
+    grid-column: 1 / span 4;
+    background-image:url(images/cover_lud.jpg);
+    background-blend-mode: overlay;
+    background-position:center;
+  }
+  .grid-featurecover {
+    visibility: hidden;
+  }
+}
+
 @media (max-width:400px) {
   .flex-menu {
     font-size: 0.75em;
@@ -174,9 +190,6 @@ a .blurb {
   position:sticky;
   top:0;
   z-index:10;
-}
-
-.flex-menu, .flex-covers {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -188,7 +201,7 @@ a .blurb {
   font-family: "Anton", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin:0;
+  margin:0 auto;
   max-width: 700px;
   gap:0;
 }
@@ -198,22 +211,37 @@ a .blurb {
   color:rgb(255, 255, 255);
 }
 
-.flex-covers {
-  background-color: rgba(255, 255, 255, 0.404);
+.grid-covers {
+  /* RESPONSIVE GRID: */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* grid-auto-rows: minmax(150px, auto); */
+  grid-gap: 0;
+  margin:0 auto;
 }
 
-.flex-featurecover {
-  justify-content: left;
-  width:50%;
+.grid-featurecover, .grid-bookinfo {
+  grid-column: 2 / span 4;
 }
 
-.flex-bookinfo {
+.grid-bookinfo {
   font-size:.75em;
   font-family: 'EB Garamond', serif;
-  margin:2em;
+  margin:1em;
   color:#000000;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding:1.5em;
+  height:500px;
+  overflow: scroll;
 }
+
+.info-title, .info-author {
+  font-family: "Anton", sans-serif;
+  margin:0;
+}
+
+.info-title {font-size:1.5em;}
+.info-author {font-size:1.25em;}
 
 .flex-menulogo img {
   height:2em;
@@ -223,84 +251,16 @@ a .blurb {
   right:.5em;
 }
 
-/* FLEXBOX MIMICKING HORIZONTAL SPINES 
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: stretch;
-  background-color: rgba(0, 0, 0, 0.75);
-  color:rgb(255, 255, 255);
-  font-family: "Anton", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  padding:1em 2em;
-  gap:1em;
-  position:relative;
-  left:-1em;
+.footer::after {
+  content:"© 2024 CURIOUSER HOUSE PUBLISHING"
 }
 
-.flex-author, .flex-title {
-  text-transform:uppercase;
-}
-
-.flex-author {
-  text-align:left;
-}
-
-.flex-title {
-  font-size: 1em;
-}
-
-.wilde-spine {
-  background-color: #ffcc00ff;
-  color:#554400ff;
-}
-
-.wilde-title {
-  font-size: 2em;
-}
-
-.lud-spine {
-  background-color: #f9f0dfff;
-  color:#d32e4dff;
-}
-
-.lud-title {
-  font-size: 2.5em;
-}
-
-.gibran-spine {
-  background-color: #cec2a7ff;
-  color:#927070ff;
-}
-
-.fraser-spine {
-  background-color: #a6c998ff;
-  color:#e73f57ff;
-  padding:0em 2em;
-}
-
-.moby-spine {
-  background-color: rgb(255, 255, 255);
-  color:#366573ff;
-}
-
-.moby-title {
-  font-size: 3em;
-}
-
-.venus-spine {
-  background-color: #ff6453ff;
-  color:rgb(255, 255, 255);
-}
-
-.vampyre-spine {
-  background-color: #2b0404ff;
-  color:#fb0000ff;
-  padding:0em 2em;
-}
-*/
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+  }
+  
+::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
+::-webkit-scrollbar-thumb {background: #d25b5b;}
+::-webkit-scrollbar-thumb:hover {background: #944040;}
