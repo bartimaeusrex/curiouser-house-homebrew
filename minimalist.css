@@ -1,0 +1,200 @@
+:root {
+  --bg-color: rgb(248, 245, 242);
+  --color-dorian: #ffcc00ff;
+  --color-flowerphantoms:#a6c998ff;
+  --color-gibran:#cec2a7ff;
+  --color-lud:#d63e59ff;
+  --color-moby:#437180ff;
+  --color-vampyre:#e40303ff;
+  --color-venus:#ff6453ff;
+}
+
+::selection {
+  background: #0a6b172a;
+  color: #441a15;
+}
+
+body {
+  /* font-family: 'EB Garamond', serif; */
+  font-size:1.25em;
+  background-color: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(images/minimalist_bg.jpg);
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  overflow-x:hidden; /* HIDES HORIZ SCROLLBAR*/
+  /* background-blend-mode: multiply; */
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+  }
+  
+::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
+::-webkit-scrollbar-thumb {background: #d25b5b;}
+::-webkit-scrollbar-thumb:hover {background: #944040;}
+
+.logo-header {
+  background: url("images/logo_green1.jpg") center / contain no-repeat;
+  height:2em;
+  padding:2em;
+  margin-bottom:2em;
+}
+
+.title {
+    font-size:1.5em;
+    letter-spacing: 0.0625em;
+    padding:1em;
+}
+
+.chp_humane_positive {width:380px;}
+.chp_humane_negative {
+  width:380px;
+  background:url("images/bg_title_charlesdickensap00wats_0036.jpg")  center no-repeat;
+  margin-bottom:2em;
+}
+
+/* .subtitle {width:380px;} */
+.subtitlediv {
+    background: url("images/subtitle.png") center / contain no-repeat;
+    height:1em;
+    margin-top:1em;
+}
+
+.covers_thumbs {
+    background: url("images/subtitle.png") center / contain no-repeat;
+    width:100%;
+}
+
+.fleuron {padding:2em 0 1em 0;display:block;}
+.multiply {mix-blend-mode: multiply;}
+.w-1em {width: 1em;}
+.w-2em {width: 2em;}
+.w-3em {width: 3em;}
+.w-4em {width: 4em;}
+.w-5em {width: 5em;}
+.w-6em {width: 6em;}
+.w-8em {width: 8em;}
+.h-1em {height: 1em;}
+.h-2em {height: 2em;}
+.h-3em {height: 3em;}
+.h-4em {height: 4em;}
+.h-5em {height: 5em;}
+.h-6em {height: 6em;}
+.h-8em {height: 8em;}
+.center-this {margin: 0 auto;}
+.center-this, .subtitlediv, .logo-header {text-align:center;}
+
+
+.booklist {
+    font-size:.875em;
+    padding:0 2em;
+    line-height:1.5em;
+}
+
+.booklist ul {
+    list-style-type: square;
+    text-underline-offset: 6px;
+}
+
+.booklist li {margin: 1em 0em;}
+.booklist ul > ul {list-style-type: none;}
+
+.booklist q {
+  text-decoration: none;
+  font-style: italic;
+  /* margin:2em 2em; */
+}
+
+/* .lt short for LIST TITLE */
+.lt {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variant: small-caps;
+  font-size:1.5em;
+  color:rgb(68, 92, 82);
+}
+
+.page-content {
+  max-width: 700px;
+  /* border: .125em solid rgba(0, 0, 0, 0.493); */
+  border-top:0;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  padding:0 0 4em 0;
+  margin:auto;
+  display:block;
+  width:auto;
+  height:100%;
+  background-image: url(images/bg_content_paper2.jpg);
+  /* background-color: var(--bg-color); */
+  background-color:rgba(255, 255, 255, 0.41);
+  background-size:fill;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media (max-width:410px) {
+.subtitlediv {
+    background: url("images/subtitle2.png") center / contain no-repeat;
+    height:2em;
+    margin: 0 auto;
+    text-align:center;
+}
+.chp_humane_negative {width:100%;}
+.grid-covers {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  margin:0 auto;
+  padding:0;
+  font-size: 0;
+}
+}
+
+/* .page-content::before, .page-content::after { 
+  visibility: visible;
+  position:absolute;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  z-index:-1;
+} */
+/* 
+.page-content::before {
+  right:100%;
+  transform: rotate(180deg);
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+}
+
+.page-content::after {
+  left:100%;
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+}
+ */
+
+.grid-covers {
+  /* RESPONSIVE GRID: */
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  margin:0 auto;
+  padding:0;
+  font-size: 0;
+}
+
+.grid-covers img {
+  width:100%;
+  margin:0;
+  padding:0;
+}
