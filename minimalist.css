@@ -37,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   margin:0;
-  overflow-x:hidden; /* HIDES HORIZ SCROLLBAR*/
+  overflow-x: hidden; /* HIDES HORIZ SCROLLBAR*/
   /* background-blend-mode: multiply; */
 }
 
@@ -123,20 +123,19 @@ a:hover {
 .center-this {margin: 0 auto;}
 .center-this, .subtitlediv, .logo-header {text-align:center;}
 
-
 .booklist {
-    font-size:.875em;
-    padding:0 2em;
-    line-height:1.5em;
+  font-size:.875em;
+  padding:0 2em;
+  line-height:1.5em;
 }
 
-.booklist ul {
-    list-style-type: square;
-    text-underline-offset: 6px;
+.booklist li {
+  list-style-type: none;
+  /* text-underline-offset: 6px; */
+  margin: 1em 0em; /* vertical spacing */
 }
 
-.booklist li {margin: 1em 0em;}
-.booklist ul > ul {list-style-type: none;}
+.booklist ul > .lt {list-style-type: square;}
 
 .booklist q {
   text-decoration: none;
@@ -187,11 +186,18 @@ a:hover {
 }
 
 @media (max-width:500px) {
-.grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  .grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  body {background-image: url(images/bg_content_paper2.jpg);}
+  .booklist {
+    padding:0 1.5em 0 0; /* right side spacing */
+  }
 }
 
 @media (max-width:410px) {
-.subtitlediv {
+  body {
+    background-image: url(images/bg_content_paper2.jpg);
+    overflow-x: hidden;}
+  .subtitlediv {
     background: url("images/subtitle2.png") center / contain no-repeat;
     height:2em;
     margin: 0 auto;
