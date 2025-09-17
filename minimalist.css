@@ -88,7 +88,7 @@ a:hover {
 .chp_humane_positive {width:380px;}
 .chp_humane_negative {
   width:380px;
-  background:url("images/bg_title_charlesdickensap00wats_0036.jpg")  center no-repeat;
+  background:url("images/bg_title_charlesdickensap00wats_0036.jpg") center no-repeat;
   margin-bottom:2em;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 }
 
 /* .lt short for LIST TITLE */
-.lt, .buybutton {
+.lt, .buybutton, .stickygrid, .stickygridmobile {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -168,6 +168,41 @@ a:hover {
   background-color:var(--color-forestgreen);
 }
 
+.menu {
+  /* CAN I APPLY SHIT FOR BOTH DESKTOP AND MOBILE MENUS
+  WITH AN OVERARCHING DIV SO I DON'T HAVE TO DO SEPARATE SHIT ALL THE TIME???? */
+  position:sticky;
+  top:0;
+}
+
+.menu > div {
+  /* border:1px black solid; */
+  margin:0 auto;
+  padding:.25em 0;
+}
+
+/* menu a:hover {
+  background-color:var(--color-forestgreen);
+} */
+
+.stickygrid, .stickygridmobile {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0 auto;
+  background:black;
+  color:white;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size:1em;
+  /* vertical-align: middle; */
+  /* grid-gap: 0;
+    font-size: 0; */
+}
+
+.stickygrid {visibility: visible;}
+.stickygridmobile {visibility: hidden;}
+.stickygrid a, .stickygridmobile a {color:white;}
+
 .grid-covers {
   /* RESPONSIVE GRID: */
   display: grid;
@@ -187,9 +222,20 @@ a:hover {
 
 @media (max-width:500px) {
   .grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr;}
-  body {background-image: url(images/bg_content_paper2.jpg);}
+  body {
+    background-image: url(images/bg_content_paper2.jpg);
+    background-size:fill;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   .booklist {
     padding:0 1.5em 0 0; /* right side spacing */
+  }
+  .stickygrid {
+  visibility: hidden;
+}
+  .stickygridmobile {
+    visibility:visible;
   }
 }
 
@@ -203,7 +249,10 @@ a:hover {
     margin: 0 auto;
     text-align:center;
 }
-.chp_humane_negative {width:100%;}
+.chp_humane_negative {
+  width:100%;
+  margin-bottom:1em;
+  }
 .grid-covers {grid-template-columns: 1fr 1fr 1fr;}
 }
 
