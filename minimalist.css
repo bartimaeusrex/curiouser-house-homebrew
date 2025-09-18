@@ -57,7 +57,7 @@ body {
   /* background-color: var(--bg-color); */
   background-color:rgb(237, 237, 235);
   background-size:fill;
-  background-position: center;
+  background-position: top center;
   background-attachment: fixed;
   background-repeat: repeat-y;
 }
@@ -80,9 +80,9 @@ a:hover {
 }
 
 .title {
-    font-size:1.5em;
-    letter-spacing: 0.0625em;
-    padding:1em;
+  font-size:1.5em;
+  letter-spacing: 0.0625em;
+  padding:1em;
 }
 
 .chp_humane_positive {width:380px;}
@@ -94,9 +94,9 @@ a:hover {
 
 /* .subtitle {width:380px;} */
 .subtitlediv {
-    background: url("images/subtitle.png") center / contain no-repeat;
-    height:1em;
-    margin-top:1em;
+   background: url("images/subtitle.png") center / contain no-repeat;
+   height:1em;
+   margin-top:1em;
 }
 
 /* .covers_thumbs {
@@ -231,9 +231,18 @@ a:hover {
   .booklist {
     padding:0 1.5em 0 0; /* right side spacing */
   }
-  .stickygrid {visibility: hidden;}
+  .stickygrid {
+    visibility: hidden;
+    z-index:0;
+    height:0;
+    font-size:0;
+    padding:0;
+    margin:0;
+    /* ALL THOSE ZEROES COLLAPSE IT SO THE MOBILE CAN STICK TO THE ABSOLUTE ACTUAL TOP! */
+  }
   .stickygridmobile {
     visibility:visible;
+    z-index:1;
   }
 }
 
@@ -246,12 +255,12 @@ a:hover {
     height:2em;
     margin: 0 auto;
     text-align:center;
-}
-.chp_humane_negative {
-  width:100%;
-  margin-bottom:1em;
   }
-.grid-covers {grid-template-columns: 1fr 1fr 1fr;}
+  .chp_humane_negative {
+    width:100%;
+    margin-bottom:1em;
+    }
+  .grid-covers {grid-template-columns: 1fr 1fr 1fr;}
 }
 
 /* .page-content::before, .page-content::after { 
