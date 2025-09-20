@@ -117,16 +117,12 @@ a:hover {
    margin-top:1em;
 }
 
-/* .covers_thumbs {
-    background: url("images/subtitle.png") center / contain no-repeat;
-    width:100%;
-} */
-
 .intro {padding:1em 3em;}
 
 .fleuron {padding:2em 0 1em 0;display:block;}
-.multiply {mix-blend-mode: multiply;}
+/* .multiply {mix-blend-mode: multiply;}
 .w-100pc {width: 100%;}
+.w-50pc {width: 50%;}
 .w-1em {width: 1em;}
 .w-2em {width: 2em;}
 .w-3em {width: 3em;}
@@ -141,7 +137,7 @@ a:hover {
 .h-5em {height: 5em;}
 .h-6em {height: 6em;}
 .h-8em {height: 8em;}
-.center-this {margin: 0 auto;}
+.center-this {margin: 0 auto;} */
 .center-this, .subtitlediv, .logo-header {text-align:center;}
 
 .spine-images {
@@ -191,13 +187,23 @@ a:hover {
   color:black;
 }
 
+
+.booktitles {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size:1.5em;
+  padding:.5em 0;
+  margin-bottom:0em;
+}
+
 /* BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! */
 
 .buybutton {
   padding:.5em;
   font-size:1em;
-  margin-right:1em;
   border-radius:.5em;
+  margin-right:.5em;
 }
 
 /* Default/fallback hover state */
@@ -206,49 +212,49 @@ a:hover {
   background-color:var(--color-forestgreen);
 }
 
-.buydorian {
+.buydorian, .titledorian {
   background-color:var(--color-dorian);
   color:var(--color-dorianbg);}
 .buydorian:hover {
   background-color:var(--color-dorianbg);
   color:var(--color-dorian);}
 
-.buylud {
+.buylud, .titlelud {
   background-color:var(--color-ludbg);
   color:var(--color-lud);}
 .buylud:hover {
   background-color:var(--color-lud);
   color:var(--color-ludbg);}
 
-.buyvampyre {
+.buyvampyre, .titlevampyre {
   background-color:var(--color-vampyrebg);
   color:var(--color-vampyre);}
 .buyvampyre:hover {
   background-color:var(--color-vampyre);
   color:var(--color-vampyrebg);}
 
-.buymoby {
+.buymoby, .titlemoby {
   background-color:var(--color-mobybg);
   color:var(--color-moby);}
 .buymoby:hover {
   background-color:var(--color-moby);
   color:var(--color-mobybg);}
 
-.buyflowerphantoms {
+.buyflowerphantoms, .titleflowerphantoms {
   background-color:var(--color-flowerphantomsbg);
   color:var(--color-flowerphantoms);}
 .buyflowerphantoms:hover {
   background-color:var(--color-flowerphantoms);
   color:var(--color-flowerphantomsbg);}
 
-.buygibran {
+.buygibran, .titlegibran {
   background-color:var(--color-gibranbg);
   color:var(--color-gibran);}
 .buygibran:hover {
   background-color:var(--color-gibran);
   color:var(--color-gibranbg);}
 
-.buyvenus {
+.buyvenus, .titlevenus {
   background-color:var(--color-venusbg);
   color:var(--color-venus);}
 .buyvenus:hover {
@@ -300,22 +306,30 @@ a:hover {
   }
 .stickygrid a, .stickygridmobile a {color:white;}
 
-.grid-covers {
+.grid-covers, .grid-desc {
   /* RESPONSIVE GRID: */
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); */
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0;
   margin:0 auto;
   padding:0;
-  font-size: 0;
+  /* font-size: 0; */
+  /* grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); */
 }
+
+.grid-desc {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+}
+
+.grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
 .grid-covers img {
   width:100%;
   margin:0;
   padding:0;
 }
+
+.grid-desc img {width:100%;}
 
 footer {
   padding-top:1em;
@@ -351,6 +365,7 @@ footer {
     font-size:1em;
   }
   .stickygridmobile img {height:1.5em;}
+  .grid-desc {grid-template-columns: 1fr;}
 }
 
 @media (max-width:410px) {
@@ -369,25 +384,3 @@ footer {
     }
   .grid-covers {grid-template-columns: 1fr 1fr 1fr;}
 }
-
-/* .page-content::before, .page-content::after { 
-  visibility: visible;
-  position:absolute;
-  content:"";
-  height:100%;
-  width:100%;
-  top:0;
-  z-index:-1;
-} */
-/* 
-.page-content::before {
-  right:100%;
-  transform: rotate(180deg);
-  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
-}
-
-.page-content::after {
-  left:100%;
-  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
-}
- */
