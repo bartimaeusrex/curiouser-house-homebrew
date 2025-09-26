@@ -18,6 +18,8 @@ class CHMiniBottomHalf extends HTMLElement {
             <a href="mailto:publisher@curiouser.house">
             <div class="emaildiv"></div>
         </a>
+                <br />
+        <img src="../images/copyright2025.png" class="h-1em"/>
         </footer>
 
         `

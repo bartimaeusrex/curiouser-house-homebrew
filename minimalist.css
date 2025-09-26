@@ -203,7 +203,7 @@ a:hover {
   padding:.5em;
   font-size:1em;
   border-radius:.5em;
-  margin-right:.5em;
+  margin: 0em .5em;
 }
 
 /* Default/fallback hover state */
