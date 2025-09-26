@@ -7,7 +7,7 @@ class CHMiniTopHalf extends HTMLElement {
         super()
         this.innerHTML = `
       <div class="center-this multiply">
-        <a href="../index_minimalist.html">
+        <a href="../">
         <div><img src="../images/logo_blankbg.png" class="h-6em logo-header" /></div>
         <img src="../images/chp_humane_negative_long.png" class="chp_humane_negative multiply center-this" /></a><br />
         <div class="subtitlediv"></div>
