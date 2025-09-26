@@ -1,68 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="basics.css" rel="stylesheet" />
+    <link href="minimalist.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <link href="styles_grid.css" rel="stylesheet" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Goudy+Bookletter+1911&family=Grenze+Gotisch:wght@100..900&family=Oswald:wght@200..700&family=Press+Start+2P&family=Schoolbell&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/0b4688c080.js" crossorigin="anonymous"></script>
-
-
-  <title>Curiouser House Publishing</title>
+    <title>Curiouser House Publishing</title>
 </head>
-
 <body>
-  <div id="logo"><a href="index.html"><img src="images/logo_red.png" /></a></div>
-  <!--<p id="title">Curiouser House Publishing</p> -->
-  
+    
   <div class="page-content">
-    <div id="bigasslogo"><img src="images/chp_impacthumane2.png" /></div>
-    <div class="flex-menu">
-      <div class="flex-menuitem">!...MORE DETAILS SOON...!</div>
-      <div class="flex-menuitem">.</div>
-      <div class="flex-menuitem">.</div>
-      <div class="flex-menulogo"><img src="images/logo_red.png" /></div>
+    <!-- PAGE CONTENT START -->
+
+    <!-- HEADER AREA START -->
+    <div class="center-this multiply">
+        <br />
+        <div><img src="images/logo_blankbg.png" class="h-6em logo-header" /></div>
+        <!-- <div class="title">Curiouser House Publishing</div>
+        <img src="images/chp_humane_positive.png" class="chp_humane_positive" />
+        <br /> -->
+        <img src="images/chp_humane_negative.png" class="chp_humane_negative multiply center-this" />
+        <!-- EB Garamond doesn't have the amazing italicized & that GaramondURW has...
+        <div class="subtitle">Rediscovering classic & obscure literature</div> -->
+         <!-- <img src="images/subtitle.png" class="subtitle" /> 
+         The following subtitlediv class sets the BACKGROUND IMAGE, so I can
+         manipulate it through the CSS! 
+         -->
+         <div class="subtitlediv"></div>
+         <img src="images/fleuronhouse.png" class="h-2em fleuron center-this" />
+         <br />
+         <!-- <img src="images/covers_thumbs.jpg" class="covers_thumbs center-this" /> -->
     </div>
-    <div class="spine-images">
-      <a href="https://www.amazon.com/dp/0984309357" target="_blank"><img src="images/spine_horiz_dorian.png" /></a>
-      <a href="https://shop.ingramspark.com/b/084?myRYWfUlYc1z9INtEEajnJ0WWgE5Q2XlXgBTioA088g" target="_blank"><img src="images/spine_horiz_lud.png" /></a>
-      <a href="https://www.amazon.com/dp/1954319029" target="_blank"><img src="images/spine_horiz_vampyre.png" /></a>
-      <a href="https://www.amazon.com/dp/B09YDHCTLM" target="_blank"><img src="images/spine_horiz_flowerphantoms.png" /></a>
-      <a href="https://www.amazon.com/dp/0984309365" target="_blank"><img src="images/spine_horiz_gibran.png" /></a>
-      <a href="https://www.amazon.com/dp/0984309349" target="_blank"><img src="images/spine_horiz_venus.png" /></a>
-      <a href="https://shop.ingramspark.com/b/084?8venaoev0eNKEJlMXa0AfHKv7X1UTPzDyBcwS4TbCGg" target="_blank"><img src="images/spine_horiz_moby.png" /></a>
-    </div>
+    <!-- END HEADER AREA -->
+
+    <!-- COVERS DIVIDER ------WITH LINKS---------:
+    <div class="grid-covers">
+      <a href="book/pictureofdoriangray.html"><img src="images/cover_dorian.jpg" /></a>
+      <a href="book/ludinthemist.html"><img src="images/cover_lud.jpg" /></a>
+      <a href="book/vampyre.html"><img src="images/cover_vampyre.jpg" /></a>
+      <a href="book/flowerphantoms.html"><img src="images/cover_flowerphantoms.jpg" /></a>
+      <a href="book/madmanforerunnerprophet.html"><img src="images/cover_kahlil.jpg" /></a>
+      <a href="book/venusinfurs.html"><img src="images/cover_venus.jpg" /></a>
+      <a href="book/mobydick.html"><img src="images/cover_mobydick.jpg" height="100%" /></a>
+    </div> -->
 
     <div class="grid-covers">
-      <a href="https://www.amazon.com/dp/0984309357" target="_blank"><div class="grid-cover"><img src="images/cover_dorian.jpg" /></div></a>
-      <a href="https://shop.ingramspark.com/b/084?myRYWfUlYc1z9INtEEajnJ0WWgE5Q2XlXgBTioA088g" target="_blank"><div class="grid-cover"><img src="images/cover_lud.jpg" /></div></a>
-    </div>
-    <div class="grid-covers">
-      <a href="https://www.amazon.com/dp/1954319029" target="_blank"><div class="grid-cover"><img src="images/cover_vampyre.jpg" /></div></a>
-      <a href="https://www.amazon.com/dp/B09YDHCTLM" target="_blank"><div class="grid-cover"><img src="images/cover_flowerphantoms.jpg" /></div></a>
-    </div>
-    <div class="grid-covers">
-      <a href="https://www.amazon.com/dp/0984309365" target="_blank"><div class="grid-cover"><img src="images/cover_kahlil.jpg" /></div></a>
-      <a href="https://www.amazon.com/dp/0984309349" target="_blank"><div class="grid-cover"><img src="images/cover_venus.jpg" /></div></a>
-    </div>
-    <div class="grid-covers">
-      <a href="https://shop.ingramspark.com/b/084?8venaoev0eNKEJlMXa0AfHKv7X1UTPzDyBcwS4TbCGg" target="_blank"><div class="grid-cover"><img src="images/cover_mobydick.jpg" /></div></a>
+      <img src="images/cover_dorian.jpg" />
+      <img src="images/cover_lud.jpg" />
+      <img src="images/cover_vampyre.jpg" />
+      <img src="images/cover_flowerphantoms.jpg" />
+      <img src="images/cover_kahlil.jpg" />
+      <img src="images/cover_venus.jpg" />
+      <img src="images/cover_mobydick.jpg" height="100%" />
     </div>
 
+    <!-- STICKY MENU BEGIN -->
+    <!-- <div class="menu center-this">
+    
+    <div class="stickygrid">
+      <a class="menu-books" href=""><div>BOOKS</div></a>
+      <a class="menu-blog" href=""><div>BLOG</div></a>
+      <a class="menu-email" href="mailto:publisher@curiouser.house"><div>CONTACT US</div></a>
+    </div>
+    <div class="stickygridmobile">
+      <div><a class="menu-email" href="mailto:publisher@curiouser.house">
+        <img src="images/envelope.png" />
+      </a></div>
+      <div><a class="" href="">THE! gf<img src=""/></a></div>
+      <div><a class="" href="">Hrr<img src=""/></a></div>
+    </div>
+    
+    </div> -->
+    <!-- STICKY MENU END -->
 
-        <!-- FOOTER! ACTUAL COPYRIGHT TEXT IN CSS FILE -->
-        <div class="flex-menu"><div class="flex-menuitem footer"></div></div>
-        
+    <!-- INTRODUCTORY BIT BEGINS -->
+
+    <div class="intro">
+        <p>Welcome! Curiouser House Publishing is a one-man-band-side-hustlin'-independent-small-business-publishing person bringing you new editions of classic literature and books that deserve to be considered classics, however forgotten they may be at the moment. I strive also to include any appropriate supplementary materials such as essays or illustrations to enhance the text and bring context to the author and their story.</p>
+        <p>For now, most books are only available through Amazon, but I intend publishing them through Ingram so that they will be more widely available to bookstores, libraries, and also Bookshop.org. I have dreams of one day having the time and energy to create both softcover and hardcover editions and, my goodness, be able to commission new artwork and essays. As it is: all editorial research, graphic design, layout, marketing, etc, is all down to me. In an ideal world this passion project would be my full time gig and I would be able to release new editions regularly. Until then, I present our current selection:</p>
+    </div>
+
+    <!-- INTRODUCTORY BIT ENDS -->
+
+
+
+    <!-- BOOK LIST START -->
+
+            <!-- To have the spine images line up nicely, they have to be OUTSIDE
+             the div booklist, ... which makes it 
+    
+            <a href="book/pictureofdoriangray.html">
+                <img src="images/spine_horiz_dorian.png" class="spine-images" />
+            </a> -->
+
+
+    <div class="booklist">
+        <ul>
+            <li>
+                <div class="booktitles titledorian w-100pc center-this">THE PICTURE OF DORIAN GRAY by OSCAR WILDE</div>
+                <div class="grid-desc">
+                <img src="images/cover_dorian.jpg" />
+                <div>
+                    <br />
+                    <p><a href="https://www.amazon.com/dp/0984309357" target="_blank" class="buybutton buydorian">AMAZON</a></p>
+                    <q>I don't want to be at the mercy of my emotions. I want to use them, to enjoy them, and to dominate them.</q>
+                    <p><a href="book/pictureofdoriangray.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p>
+                    <p class="bookspecs">Paperback. 5x8 inches. 376 pages.<br />
+                        ISBN: 9780984309351</p></div>
+                    <br />
+                </div>
+            </li>
+            <li>
+                <div class="booktitles titlelud w-100pc center-this">LUD-IN-THE-MIST by HOPE MIRRLEES</div>
+                <div class="grid-desc">
+                <img src="images/cover_lud.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/1954319010" target="_blank" class="buybutton buylud">AMAZON</a><a href="https://bookshop.org/a/89341/9781954319011" target="_blank" class="buybutton buylud">BOOKSHOP.ORG</a><a href="https://shop.ingramspark.com/b/084?myRYWfUlYc1z9INtEEajnJ0WWgE5Q2XlXgBTioA088g" target="_blank" class="buybutton buylud">INGRAM</a></p>
+                    <q>The story she relates, fantastic and dreamlike, takes place in a land unknown long ago and describes how a nation of solid burghers were in danger from their neighbours the fairies. No pretty sprites these, but agitating creatures who set matter-of-fact citizens dreaming, pervert an academy full of young ladies and tempt worthy hucksters to dally with beauty. Fairy fruit which sends men mad is being smuggled into Dorimare.</q> —The Spectator, November 27, 1926
+                     <!-- <p><a href="book/ludinthemist.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                     <p><a href="https://www.amazon.com/Lud-Mist-Hope-Mirrlees-ebook/dp/B09XN5TW8Y/">Also avilable as an ebook (Kindle)</a>.</p> <!--  eBook ISBN: 9781954319073 -->
+                    <p class="bookspecs">Paperback. 5x8 inches. 366 pages.<br />
+                        ISBN: 9781954319011</p>
+                </div>
+                </div>
+                <br />
+            </li>
+            <li>
+                <div class="booktitles titlevampyre w-100pc center-this">THE VAMPYRE by JOHN WILLIAM POLIDORI</div>
+                <div class="grid-desc">
+                <img src="images/cover_vampyre.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/1954319029" target="_blank" class="buybutton buyvampyre">AMAZON</a></p>
+                    <q>'Remember your oath!'—upon her neck and breast was blood, and upon her throat were the marks of teeth having opened the vein:—to this the men pointed, crying, simultaneously struck with horror, 'A Vampyre! a Vampyre!'</q>
+                     <!-- <p><a href="book/vampyre.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                     <p class="bookspecs">Paperback. 5x8 inches. 94 pages. ISBN: 9781954319028</p>
+                </div></div>
+                <br />
+            </li>
+            <li>
+                <div class="booktitles titleflowerphantoms w-100pc center-this">FLOWER PHANTOMS by RONALD FRASER</div>
+                <div class="grid-desc">
+                <img src="images/cover_flowerphantoms.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/1954319037" target="_blank" class="buybutton buyflowerphantoms">AMAZON</a></p>
+                    <q>Told with delicate imagery and fine perceptions, a minor rococoism of art deco literature.</q>—Everett F. Bleiler
+                    <!-- <p><a href="book/flowerphantoms.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                    <p class="bookspecs">Paperback. 5x8 inches. 132 pages. ISBN: 9781954319035</p>
+                    <br />
+                </div></div>
+            </li>
+            <li>
+                <div class="booktitles titlemoby w-100pc center-this">MOBY DICK; OR, THE WHALE by HERMAN MELVILLE</div>
+                <div class="grid-desc">
+                <img src="images/cover_mobydick.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/0984309373" target="_blank" class="buybutton buymoby">AMAZON</a><a href="https://bookshop.org/a/89341/9780984309375" target="_blank" class="buybutton buymoby">BOOKSHOP.ORG</a><a href="https://shop.ingramspark.com/b/084?8venaoev0eNKEJlMXa0AfHKv7X1UTPzDyBcwS4TbCGg" target="_blank" class="buybutton buymoby">INGRAM</a></p>
+                <q>One of the strangest and most wonderful books in the world, closing up its mystery and its tortured symbolism. It is an epic of the sea such as no man has equaled; and it is a book of exoteric symbolism of profound significance.</q>—D.H. Lawrence
+                <!-- <p><a href="book/mobydick.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                <p class="bookspecs">Hardcover. 6x9 inches. 534 pages. ISBN: 9780984309375</p>
+                </div></div>
+                <br />
+            </li>
+            <li>
+                <div class="booktitles titlevenus w-100pc center-this">VENUS IN FURS by LEOPOLD VON SACHER-MASOCH</div>
+                <div class="grid-desc">
+                <img src="images/cover_venus.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/0984309349" target="_blank" class="buybutton buyvenus">AMAZON</a></p>
+                    <q>You have a curious way of arousing one's imagination, stimulating alone's nerves, and making one's pulse beat faster. ... Oh, you are the kind of man who will corrupt a woman to her very last fiber.</q>
+                    <p>Translated by Fernanda Savage</p>
+                    <!-- <p><a href="book/venusinfurs.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                    <p class="bookspecs">Paperback. 5x8 inches. 192 pages. ISBN: 978-0984309344</p>
+                </div></div>
+                <br />
+            </li>
+            <li>
+                <div class="booktitles titlegibran w-100pc center-this">THE MADMAN, THE FORERUNNER, AND THE PROPHET<br />by KAHLIL GIBRAN</div>
+                <div class="grid-desc">
+                <img src="images/cover_gibran.jpg" />
+                <div>
+                    <p><a href="https://www.amazon.com/dp/0984309365" target="_blank" class="buybutton buygibran">AMAZON</a></p>
+                <q>To understand the heart and mind of a person, look not at what he has already achieved, but at what he aspires to.</q>
+                <!-- <p><a href="book/madmanforerunnerprophet.html">More about this book: photos, behind-the-scenes editorial and design decisions.</a></p> -->
+                <p class="bookspecs">Paperback. 5x8 inches. 208 pages. ISBN: 9780984309368</p>
+                </div></div>
+                <br />
+            </li>
+        </ul>
+    </div>
+    <!-- BOOK LIST ENDS -->
+
+<!-- 
+    <script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="curiouser-picks-the-most-classic-of-classics"></script>
+    <script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="curiouser-house-books"></script>
+           -->
+
+
+    <img src="images/fleuronhouse.png" class="h-2em fleuron center-this" />
+
+    <!-- FOOTER BEGIN -->
+
+    <!-- WHAT SHOULD I PUT HERE? SIMILAR TO MAYBE REINHARTBOOKS.COM??? -->
+        <footer class="center-this">
+        <!-- <a href="https://reinhartbooks.com" target="_blank"><img class="h-2em multiply" src="images/fleuron.png" /></a>
+        <a href="https://pilcrow.monster/" target="_blank"><img class="h-2em multiply" src="images/pilcrowmonster.png" /></a> -->
+        <a href="https://bookshop.org/shop/curiouserhouse" target="_blank"><img class="h-2em multiply" src="images/bookshop.png" /></a>
+        <a href="https://bsky.app/profile/curiouser.house" target="_blank"><img class="h-2em multiply" src="images/bsky.png" /></a>
+        <a href="https://www.instagram.com/curiouserhouse" target="_blank"><img class="h-2em multiply" src="images/instagram.png" /></a>
+        <a href="https://www.tiktok.com/@curiouserhouse" target="_blank"><img class="h-2em multiply" src="images/tiktok.jpg" /></a>
+        <!-- <a href="https://fable.co/178026429369" target="_blank"><img class="h-2em multiply" src="images/fable.jpg" /></a>
+        <a href="https://app.thestorygraph.com/profile/mrpatrickreinhart" target="_blank"><img class="h-2em multiply" src="images/storygraph.jpg" /></a> -->
+        <br />
+        <!-- ■  -->
+        <a href="mailto:publisher@curiouser.house">
+            <div class="emaildiv"></div>
+        </a>
+        <br />
+        <img src="images/copyright2025.png" class="h-1em"/>
+        <!-- <div class="disclaimer aside">Disclaimer: All links to books on Bookshop.org are affiliate links, on which I earn a small commission <em>if</em> you end up buying books through them. Otherwise, there will be no ads, no SEO, and no use of AI. Fuck all that noise.</div> -->
+        </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- END PAGE CONTENT -->
   </div>
-
 
 </body>
 </html>
