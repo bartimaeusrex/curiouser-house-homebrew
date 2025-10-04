@@ -1,31 +1,126 @@
 :root {
   --bg-color: rgb(248, 245, 242);
+  --color-dorian: #ffcc00ff;
+  --color-flowerphantoms:#a6c998ff;
+  --color-gibran:#cec2a7ff;
+  --color-lud:#d63e59ff;
+  --color-moby:#437180ff;
+  --color-vampyre:#e40303ff;
+  --color-venus:#ff6453ff;
+}
+
+::selection {
+  background: rgba(197, 58, 81, 0.363);
+  color: #441a15;
 }
 
 body {
   font-family: 'EB Garamond', serif;
   font-size:1.25em;
   background-color: var(--bg-color);
-  background-image: url(images/bg_moonboys30b.png);
   background-position: center;
+  background-size: cover;
+  /* background-size: 20%; */
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   align-items: center;
   justify-content: center;
   margin:0;
+  overflow-x:hidden; /* HIDES HORIZ SCROLLBAR*/
+  /* background-blend-mode: multiply; */
 }
 
 a {
-  /*text-underline-offset: .25em;
-  text-decoration:underline dashed #666;*/
   color: #000000;
   text-decoration:none;
 }
+
+.color-dorian {background-color: var(--color-dorian);}
+.color-flowerphantoms {
+  background-color: var(--color-flowerphantoms);
+}
+.color-gibran {background-color: var(--color-gibran);}
+.color-lud {background-color: var(--color-lud);}
+.color-moby {background-color: var(--color-moby);}
+.color-vampyre {background-color: var(--color-vampyre);}
+.color-venus {background-color: var(--color-venus);}
 
 img {
   width:100%;
   margin:0;
   padding:0;
+}
+
+.stickycover {
+  position:sticky;
+  top:0;
+  z-index:0;
+  font-size: 0;
+  /* box-shadow: 0 0 1em rgba(0, 0, 0, 0.397); */
+}
+
+ .bookinfo_left, .bookinfo_right {
+  visibility: visible;
+  position:absolute;
+  top:-.5em;
+  width:75px;
+  height:100%;
+  /* border:1px solid black; */
+  background-size:contain;
+  border-top:.5em solid black;
+  /* border-bottom:.5em solid black; */
+  background-color: #000000;
+  }
+
+.bookinfo_left {
+    background-image: url(images/border_nouveau_left.png);
+    right:100%;
+    border-right:0px solid black;
+    border-left:.125em solid black;
+  }
+
+.bookinfo_right {
+    background-image: url(images/border_nouveau_left.png);
+    left:100%;
+    border-left:0px solid black;
+    border-right:.125em solid black;
+    transform: rotateY(180deg);
+  }
+
+.spine-images {font-size:0;}
+
+.hilite {
+  background-color: rgba(255, 240, 155, 0.2);
+}
+
+.highlighter {
+  background-color: rgba(255, 240, 155, 0.3);
+  text-decoration:underline solid orange;
+  text-underline-offset: .25em;
+  /* position:relative; */
+}
+
+.highlighter:hover {
+  text-decoration:underline solid rgba(26, 65, 42, 0.527);
+  background-image: url(images/bg_burst.png);
+  /* background-repeat: no-repeat;
+  width:100%;
+  height:100%; */
+  object-fit:cover;
+  position:relative;
+  top:0;
+  left:0;
+}
+
+.highlighter::after {
+  content:" ➼";
+  /* position:absolute;
+  top:0;
+  left:0; */
+}
+
+.highlighter:hover::after {
+  content:" ➹";
 }
 
 #title,
@@ -39,9 +134,9 @@ img {
   left:2.5em;
 }
 
-#logo {
+.logo {
   visibility: hidden;
-  width: 4em;
+  width: 6em;
   position:fixed;
   top:1em;
   left:2em;
@@ -49,8 +144,27 @@ img {
   z-index:3;
 }
 
+.center-this {
+  margin: 0 auto;
+  text-align:center;
+}
+
+.multiply {mix-blend-mode: multiply;}
+
+.gumroadproduct {
+  background-color: #d25b5b00;
+  width:50%;
+}
+
 #bigasslogo {
-  z-index:5;
+  /* z-index:5; */
+  background-color:var(--bg-color);
+  mix-blend-mode: multiply;
+  background-image: url(images/bg_dore.jpg);
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  font-size: 0;
   /*background-color: var(--bg-color); */
 }
 
@@ -64,9 +178,7 @@ img {
   background-color: rgba(255, 240, 155, 0.3);
 }
 
-.content p::before {
-  content:"¶ ";
-}
+.content p::before {content:"¶ ";}
 
 .content::after {
   font-size:2em;
@@ -79,55 +191,6 @@ img {
   text-transform:uppercase;
 }
 
-@media (max-width:700px) {
-  .content {
-    width: 90%;
-    margin-right:2em;
-    margin-left:auto;
-  }
-  #logo {
-    width: 4em;
-    position:fixed;
-    margin-top:1em;
-    margin-right:2em;
-  }
-  #title {
-    visibility: hidden;
-    position:absolute;
-    left:1em;
-    top:1em;
-  }
-}
-
-@media (max-width:680px) {
-  .grid-bookinfo {
-    width:80%;
-    height:350px; /* << not doing SHIT... */
-    position:absolute;
-    left:0;
-    grid-column: 1 / span 4;
-    background-image:url(images/cover_lud.jpg);
-    background-blend-mode: overlay;
-    background-position:center;
-  }
-  .grid-featurecover {
-    visibility: hidden;
-  }
-}
-
-@media (max-width:400px) {
-  .flex-menu {
-    font-size: 0.75em;
-  }
-  body {
-    background-color: var(--bg-color);
-    background-image: url(images/bg_moonboys30b.png);
-    background-position: left;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-}
-
 .inwhich {
   margin-left:auto;
   margin-right:auto;
@@ -137,9 +200,7 @@ img {
   font-style:italic;
 }
 
-.inwhich::first-line {
-  text-transform:capitalize;
-}
+.inwhich::first-line {text-transform:capitalize;}
 
 .date {
   /* margin:2em 2em; */
@@ -150,8 +211,10 @@ img {
   font-family: 'Press Start 2P', cursive;
 }
 
-.date a {
-  background-color: red;
+.date a {background-color: red;}
+
+.description {
+  text-align: left;
 }
 
 .blurb::after {
@@ -164,27 +227,101 @@ a .blurb {
   background-color: var(--bg-color);
 }
 
+.quote_tagline {
+  font-size:larger;
+  font-style: italic;
+}
+
+.quote_tagline::before {content: "“";}
+.quote_tagline::after {content: "”";}
+
 .asterism {
   text-align:center;
   margin-bottom:1em;
  /* content:"⁂"; */
 }
 
+/* SLIDER CSS from
+https://origin-blog.mediatemple.net/design-creative/carousels-dont-have-to-be-complicated/ */
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+
+  /* each slide snaps into place */
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 700px;
+}
+
+/* END SLIDER CSS */
+
 .page-content, #bigasslogo {
   max-width: 700px;
+  border: .125em solid rgba(0, 0, 0, 0.493);
+  border-top:0;
   align-items: center;
   justify-content: center;
 }
 
 .page-content {
+  position:relative;
   padding:0;
   margin:auto;
   display:block;
+  width:auto;
+  background-image: url(images/logo_red24op.png);
+  background-size:contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.spine-images {
-  font-size: 0;
+/* .bgendpaper_left, .bgendpaper_right */
+.page-content::before, .page-content::after { 
+  visibility: visible;
+  position:absolute;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  /* background-size:contain; */
+  /* background-attachment: fixed; */
+  /* background-blend-mode: multiply; */
+  /* background-repeat: repeat-y; */
+  z-index:-1;
 }
+
+.page-content::before {
+  right:100%;
+  transform: rotate(180deg);
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+}
+
+.page-content::after {
+  left:100%;
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+}
+
+/* .bgendpaper_right {
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+  left:0;
+}
+
+.bgendpaper_left {
+  background-image: url(images/endpapers_marbled_antiquetealred.jpg);
+  right:0;
+}  */
 
 .flex-menu {
   position:sticky;
@@ -201,7 +338,7 @@ a .blurb {
   font-family: "Anton", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  margin:0 auto;
+  margin:0 auto; /* the auto makes the footer centered! */
   max-width: 700px;
   gap:0;
 }
@@ -211,6 +348,24 @@ a .blurb {
   color:rgb(255, 255, 255);
 }
 
+.story {
+  width:inherit; /* FTW!! */
+  font-size:.8em;
+  padding:2em 3em;;
+  align-content: stretch;
+  border-left:2px solid #000000;
+  border-right:2px solid #000000;
+  background-color: rgba(255, 255, 255, 0.85);
+  /* background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%); */
+}
+
+.storytitle {
+  font-family: "Anton", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size:2em;
+}
+
 .grid-covers {
   /* RESPONSIVE GRID: */
   display: grid;
@@ -218,41 +373,76 @@ a .blurb {
   /* grid-auto-rows: minmax(150px, auto); */
   grid-gap: 0;
   margin:0 auto;
+  padding:0;
+  font-size: 0;
 }
+
+/* .grid-cover {
+  font-size:.75em;
+} */
 
 .grid-featurecover, .grid-bookinfo {
   grid-column: 2 / span 4;
+  display:block;
+  visibility: visible;
 }
 
 .grid-bookinfo {
-  font-size:.75em;
+  font-size:1.125rem;
   font-family: 'EB Garamond', serif;
-  margin:1em;
+  /* margin:1em; */
   color:#000000;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding:1.5em;
-  height:500px;
-  overflow: scroll;
+  background-color: rgb(245, 240, 238);
+  padding:3.5em;
+  border-top:.5em solid black;
+  border-left:.125em solid black;
+  border-right:.125em solid black;
+  border-bottom:0 solid black;
+  /* border-style:outset;
+  border-image:url(images/border_nouveau_left.png); */
+  width:60%;
+  position:relative;
+  /* height:512px;
+  overflow: scroll; */
+  /* box-shadow: 0 0 1em rgba(0, 0, 0, 0.397); */
 }
 
+.product {
+  margin:1em;
+  padding:1em;
+}
+
+.paypalproduct, .paypalbuttons {
+  width:45%;
+}
+
+.paypalproduct {float:left;}
+/* .paypalbuttons {float:right;} */
+
+.pp-F8CBHYKPBEHN4{text-align:center;border:none;border-radius:1.5rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}
+
 .info-title, .info-author {
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   margin:0;
 }
 
 .info-title {font-size:1.5em;}
 .info-author {font-size:1.25em;}
 
-.flex-menulogo img {
-  height:2em;
-  width:2em;
+.flex-menulogo {
+  height:4em;
+  width:4em;
   position:absolute;
-  top:-.25em;
+  top:-1.25em;
   right:.5em;
 }
 
 .footer::after {
-  content:"© 2024 CURIOUSER HOUSE PUBLISHING"
+  content:"CURIOUSER HOUSE PUBLISHING";
 }
 
 /* Scrollbar styles */
@@ -264,3 +454,145 @@ a .blurb {
 ::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
 ::-webkit-scrollbar-thumb {background: #d25b5b;}
 ::-webkit-scrollbar-thumb:hover {background: #944040;}
+
+@media (max-width:700px) {
+  .content {
+    width: 90%;
+    margin-right:2em;
+    margin-left:auto;
+  }
+  /* .logo {
+    width: 4em;
+    position:fixed;
+    margin-top:1em;
+    margin-right:2em;
+  } */
+  #title {
+    visibility: hidden;
+    position:absolute;
+    left:1em;
+    top:1em;
+  }
+  
+}
+
+@media (max-width:680px) {
+  .grid-bookinfo {
+    width:fit-content;
+    height:fit-content;
+    position:relative;
+    left:0;
+    grid-column: 1 / span 4;
+    /* overflow:auto; */
+    margin-bottom:0;
+    /* background-image:url(images/cover_lud.jpg);
+    background-blend-mode: overlay;
+    background-position:center; */
+  }
+
+  .bookinfo_left {
+    visibility: hidden;
+  }
+  .bookinfo_right {
+    visibility: hidden;
+    width:0px;
+  }
+
+  .grid-featurecover {
+    display: none;
+  }
+
+  .flex-menulogo {
+    height:2em;
+    width:2em;
+    position:absolute;
+    top:-.25em;
+    right:.5em;
+  }
+}
+
+@media (max-width:400px) {
+  .flex-menu {
+    font-size: 0.75em;
+  }
+  body {
+    background-color: var(--bg-color);
+    background-image: url(images/bg_moonboys30b.png);
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+    .flex-menulogo {
+    height:2em;
+    width:2em;
+    position:absolute;
+    top:-.25em;
+    right:.5em;
+  }
+}
+
+/*
+
+RELATED W3.CSS STYLES
+
+https://www.w3schools.com/w3css/4/w3.css
+
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self
+
+DELETE IF UNABLE TO GET CAROUSEL SLIDESHOW TO WORK!!
+
+*/
+
+.w3-content {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:980px;
+}
+
+.mySlides {
+  display:none;
+  width:100%;
+}
+
+.w3-button {
+  width:100%;
+  white-space:normal;
+  text-align:left;
+  padding:8px 16px;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:none;
+  display:inline-block;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  cursor:pointer;
+  /* white-space:nowrap; */
+}
+.w3-button:disabled{cursor:not-allowed;opacity:0.3;}
+
+.w3-display-container{position:relative;}
+.w3-display-container:hover .w3-display-hover{display:block;}
+.w3-display-container:hover span.w3-display-hover{display:inline-block;}
+
+.w3-display-left, .w3-display-right {
+  position:absolute;
+  top:50%;
+ }
+
+.w3-display-left {
+  left:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%)
+}
+.w3-display-right {
+  right:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%)
+}

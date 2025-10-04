@@ -52,10 +52,11 @@ body {
   max-width: 700px;
   /* border: .125em solid rgba(0, 0, 0, 0.493); */
   border-top:0;
+  /* border-bottom:.5em solid black; */
   align-items: center;
   justify-content: center;
   position:relative;
-  padding:0 0 4em 0;
+  padding:0 0 0em 0; /* the third one is bottom padding */
   margin:auto;
   display:block;
   width:auto;
@@ -69,18 +70,18 @@ body {
   background-repeat: repeat-y;
 }
 
-.bookpage {
-  margin: 0em 2.5em; /* horizontal spacing */
-}
+.bookpage, .blog, .blogpost, .merch {margin: 2em 2.5em;}
 
 a {
   color:var(--color-forestgreen);
   text-decoration:none;
 }
 a:hover {
-  color:var(--color-forestgreen);
-  background-color:var(--color-highlight);
+  color:var(--color-vampyrebg);
+  /* background-color:var(--color-highlight); */
 }
+
+a:hover img {background-color:none;}
 
 .logo-header {
   background: url("images/001.jpg") center no-repeat;
@@ -88,9 +89,9 @@ a:hover {
   margin:2em 0;
 }
 
-.chp_humane_negative:hover aa {
+/* .chp_humane_negative:hover a {
   background-color:blue;
-}
+} */
 
 .title {
   font-size:1.5em;
@@ -112,33 +113,15 @@ a:hover {
    margin-top:1em;
 }
 .emaildiv {
-   background: url("images/emailaddress.png") center / contain no-repeat;
+   background: url("images/emailaddress2.png") center / contain no-repeat;
    height:1em;
    margin-top:1em;
 }
 
+h1 {padding:1em 0em;}
 .intro {padding:1em 3em;}
-
 .fleuron {padding:2em 0 1em 0;display:block;}
-/* .multiply {mix-blend-mode: multiply;}
-.w-100pc {width: 100%;}
-.w-50pc {width: 50%;}
-.w-1em {width: 1em;}
-.w-2em {width: 2em;}
-.w-3em {width: 3em;}
-.w-4em {width: 4em;}
-.w-5em {width: 5em;}
-.w-6em {width: 6em;}
-.w-8em {width: 8em;}
-.h-1em {height: 1em;}
-.h-2em {height: 2em;}
-.h-3em {height: 3em;}
-.h-4em {height: 4em;}
-.h-5em {height: 5em;}
-.h-6em {height: 6em;}
-.h-8em {height: 8em;}
-.center-this {margin: 0 auto;} */
-.center-this, .subtitlediv, .logo-header {text-align:center;}
+.subtitlediv, .logo-header {text-align:center;}
 
 .spine-images {
   /* font-size:0;
@@ -152,7 +135,7 @@ a:hover {
 
 .booklist {
   font-size:.875em;
-  padding:0 2em 0 1em; /* horizontal spacing */
+  padding:0 2em 0 0em; /* horizontal spacing */
   line-height:1.5em;
 }
 
@@ -187,7 +170,6 @@ a:hover {
   color:black;
 }
 
-
 .booktitles {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -196,6 +178,15 @@ a:hover {
   padding:.5em 0;
   margin-bottom:0em;
 }
+
+.moreabout {
+  border:1px solid #2f493141;
+  border-radius:5px;
+  background-color: #ffffffe8;
+  padding:.5em;
+}
+
+.moreabout:hover {border:1px solid #2f4931;}
 
 /* BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! */
 
@@ -263,18 +254,27 @@ a:hover {
 
 /* END BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! BUY BUTTONS! */
 
+.merchtitle {font-size: 1em;}
+
+
 
 .menu {
   /* CAN I APPLY SHIT FOR BOTH DESKTOP AND MOBILE MENUS
   WITH AN OVERARCHING DIV SO I DON'T HAVE TO DO SEPARATE SHIT ALL THE TIME???? */
   position:sticky;
   top:0;
+  margin:0 auto;
+  color:var(--color-ludbg);
+  z-index:2;
+  /* padding:.25em 0; */
 }
+
+.menu a:hover {background-color:var(--color-ludbg);color:var(--color-vampyre);}
 
 .menu > div {
   /* border:1px black solid; */
-  margin:0 auto;
-  padding:.25em 0;
+  margin:.0 auto;
+  /* padding:.25em 0; */
 }
 
 /* menu a:hover {
@@ -290,6 +290,7 @@ a:hover {
   font-weight: 500;
   font-variant: small-caps;
   font-size:1em;
+  z-index:99;
   /* vertical-align: middle; */
   /* grid-gap: 0;
     font-size: 0; */
@@ -316,10 +317,19 @@ a:hover {
   /* grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); */
 }
 
-.grid-desc {
+
+.grid-desc, .grid-merch {
+  display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
 }
+
+.grid-merch {
+  display:grid;
+  padding:1.5em;
+}
+
+.grid-desc img, .grid-merch img {width:100%;}
 
 .grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 
@@ -327,14 +337,43 @@ a:hover {
   width:100%;
   margin:0;
   padding:0;
+  height:100%;
 }
-
-.grid-desc img {width:100%;}
 
 footer {
   padding-top:1em;
   font-family: 'Courier Prime', monospace;
   vertical-align:middle;
+}
+
+.footertown {
+  padding:0;
+  /* margin-bottom:0em; */
+  border-bottom:.25em solid black;
+  background: url("images/ch_town.png") center / contain no-repeat;
+  background-position:bottom;
+  width:100%;
+  height:180px;
+}
+
+/* .subtitlediv {
+   background: url("images/subtitle.png") center / contain no-repeat;
+   height:1em;
+   margin-top:1em;
+} */
+
+.copyright {
+  background-color:black;
+  color:white;
+  height:2em;
+  padding:1em 0 0 0;
+  font-size:.75em;
+  vertical-align:middle;
+  display:grid;
+}
+
+.copyright::after {
+  content:"© 2025 Curiouser House Publishing";
 }
 
 @media (max-width:500px) {
@@ -359,13 +398,31 @@ footer {
   }
   .stickygridmobile {
     visibility:visible;
-    z-index:1;
+    z-index:2;
     margin:0 auto;
     height:1.5em;
     font-size:1em;
   }
   .stickygridmobile img {height:1.5em;}
   .grid-desc {grid-template-columns: 1fr;}
+  .copyright {
+    background-color:black;
+    color:white;
+    height:2em;
+    padding:1em 0 0 0;
+    font-size:.625em;
+    vertical-align:middle;
+    display:grid;
+}
+  .footertown {
+    padding:0;
+    /* margin-bottom:0em; */
+    border-bottom:.25em solid black;
+    background: url("images/chtown_mobile.jpg") center / contain no-repeat;
+    background-position:bottom;
+    width:100%;
+    height:120px;
+}
 }
 
 @media (max-width:410px) {
