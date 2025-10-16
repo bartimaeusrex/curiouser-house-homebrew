@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <ch-headerinfo></ch-headerinfo>
+  <link href="../styles_grid.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  <script defer src="../jscomps/CHHeaderInfo.js"></script>
+  <script defer src="../jscomps/CHMenu.js"></script>
+  <script defer src="../jscomps/CHSpinesHorizontal.js"></script>
+  <script defer src="../jscomps/CHSpinePictureofDorianGray.js"></script>
+  <script defer src="../jscomps/CHCovers.js"></script>
+  <script defer src="../jscomps/CHFullCatalog.js"></script>
+  <script defer src="../jscomps/CHFooter.js"></script>
+  <script src="../carousel.js"></script>
+
+  <title>Curiouser House Publishing: The Picture of Dorian Gray</title>
+</head>
+
+<body>
+  <div class="page-content">
+    <div id="bigasslogo">
+      <a href="../index.html"><img src="../images/chp_tagline_impacthumaneagincourt_window.png" /></a>
+    </div>
+    <ch-menu></ch-menu>
+
+    <!-- <div class="stickycover"><img src="../images/cover_dorian_full.jpg" /></div> -->
+
+<div class="stickycover w3-content w3-display-container">
+    <img class="mySlides" src="../images/cover_dorian_full.jpg">
+    <img class="mySlides" src="../images/cover_dorian_mockup.jpg">
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  </div>
+      
+
+        
+        <div class="grid-bookinfo center-this">
+          <div class="bookinfo_left"></div>
+          <div class="bookinfo_right"></div>
+          <div>
+          <p class="info-title">THE PICTURE OF DORIAN GRAY</p>
+          <p class="info-author">Oscar Wilde</p>
+          <blockquote class="quote_tagline">I don't want to be at the mercy of my emotions. I want to use them, to enjoy them, and to dominate them.</blockquote>
+
+          <div class="description">
+          <ul>
+            <li><a href="https://www.amazon.com/dp/0984309357" target="_blank" class="highlighter">Buy from Amazon</a></li>
+          </ul>
+          <p>
+            Oscar Wilde's only novel, the classic gothic tale of the Victorian fin-de-siecle. Published in serial form in 1890, and then as a novel a year later, it caused a sensation.
+          </p><p>
+            Included in this edition are contemporary reviews, critiques, and editorials, along with many of Oscar Wilde's personal replies, in a collection originally edited by Stuart Mason (Art and Morality: a Record of the Discussion Which Followed the Publication of <q>Dorian Gray</q>), and published in 1908. Such discourse provides a rich context for the society in which Wilde lived.
+          </p><p>
+            Oscar Wilde's only novel, the classic gothic tale of the Victorian fin-de-siecle. Published in serial form in 1890, and then as a novel a year later, it caused a sensation.
+          </p><p>
+            Included in this edition are contemporary reviews, critiques, and editorials, along with many of Oscar Wilde's personal replies, in a collection originally edited by Stuart Mason (Art and Morality: a Record of the Discussion Which Followed the Publication of <q>Dorian Gray</q>), and published in 1908. Such discourse provides a rich context for the society in which Wilde lived.
+          </p>
+        </div> <!-- END DESCRIPTION DIV -->
+
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-Z10PlQthXU?si=UIx_XGXqcOtcu0GM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+      <!-- </div> -->
+
+      <!-- <div class="spine-images">
+        <img src="../images/cover_dorian_full.jpg" />
+      </div> -->
+
+    <!-- <div class="spine-images">
+      <a href="ludinthemist.html"><img src="../images/spine_horiz_lud.png" /></a>
+      <a href="vampyre.html"><img src="../images/spine_horiz_vampyre.png" /></a>
+      <a href="flowerphantoms.html"><img src="../images/spine_horiz_flowerphantoms.png" /></a>
+      <a href="madmanforerunnerprophet.html"><img src="../images/spine_horiz_gibran.png" /></a>
+      <a href="venusinfurs.html"><img src="../images/spine_horiz_venus.png" /></a>
+      <a href="mobydick.html"><img src="../images/spine_horiz_moby.png" /></a>
+    </div> -->
+
+    </div>
+
+
+      <!-- FULL CATALOG LINK! JUST CHANGE COLOR CLASS -->
+      <div class="spine-images color-dorian"><ch-fullcatalog></ch-fullcatalog></div>
+
+
+    <ch-footer></ch-footer>
+        
+  </div>
+
+
+</body>
+</html>

@@ -317,6 +317,12 @@ h1 {padding:1em 0em;}
   /* grid-template-columns: repeat(auto-fill, minmax(380px, 7fr)); */
 }
 
+.merch-shopify {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
+  padding:1em;
+}
 
 .grid-desc, .grid-merch {
   display:grid;
@@ -376,6 +382,8 @@ footer {
   content:"© 2025 Curiouser House Publishing";
 }
 
+/* iframe {width:650px;border:0;} */
+
 @media (max-width:500px) {
   .grid-covers {grid-template-columns: 1fr 1fr 1fr 1fr;}
   body {
@@ -405,6 +413,15 @@ footer {
   }
   .stickygridmobile img {height:1.5em;}
   .grid-desc {grid-template-columns: 1fr;}
+
+  .merch-shopify {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+    width:100%;
+    padding:0em 3.5em;
+}
+
   .copyright {
     background-color:black;
     color:white;
