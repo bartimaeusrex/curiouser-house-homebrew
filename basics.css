@@ -19,7 +19,7 @@ margin is WITHIN the div
 
 */
 
-
+p {text-wrap:pretty;}
 
 .w-100pc {width: 100%;}
 .w-50pc {width: 50%;}

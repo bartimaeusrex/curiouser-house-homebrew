@@ -1,4 +1,6 @@
 
+// ZAZZLE SHIT.
+
 class CHMerch extends HTMLElement {
     constructor() {
         super()
@@ -23,20 +25,6 @@ class CHMerch extends HTMLElement {
 
         <div><a href="https://www.zazzle.com/marbling_book_covers_endpapers_antique_swirls_lamp_shade-256250757410166085"><img id="256250757410166085-image" src="https://rlv.zcache.com/svc/view?rlvnet=1&realview=113261359549482332&design=28a2a453-0f06-4ac9-9779-edf88e9577db&style=tableshade&material=poly&basefinish=none&trimcolor=black&max_dim=644" />LAMP SHADES</a></div>
         
-
-
-
-
-
-<div id="product-component-1759584152519" class="multiply"></div><script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.async=!0,t.src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t),t.onload=o}function o(){var t=ShopifyBuy.buildClient({domain:"reinhartbooks.myshopify.com",storefrontAccessToken:"610a7b442285ee789349562e9f45512f"});ShopifyBuy.UI.onReady(t).then(function(t){t.createComponent("product",{id:"6870388998196",node:document.getElementById("product-component-1759584152519"),moneyFormat:"%24%7B%7Bamount%7D%7D",options:{product:{styles:{product:{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},title:{"font-family":"Crimson Text, serif"},price:{"font-weight":"bold"},compareAt:{"font-weight":"bold"},unitPrice:{"font-weight":"bold"}},googleFonts:["Crimson Text"]},productSet:{styles:{products:{"@media (min-width: 601px)":{"margin-left":"-20px"}}}},modalProduct:{contents:{img:!1,imgWithCarousel:!0},styles:{product:{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},option:{},cart:{},toggle:{}}})})}window.ShopifyBuy&&window.ShopifyBuy.UI?o():t()}()</script>
-
-<div id="product-component-1759585534430" class="multiply"></div><script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.async=!0,t.src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t),t.onload=o}function o(){var t=ShopifyBuy.buildClient({domain:"reinhartbooks.myshopify.com",storefrontAccessToken:"610a7b442285ee789349562e9f45512f"});ShopifyBuy.UI.onReady(t).then(function(t){t.createComponent("product",{id:"6893029752884",node:document.getElementById("product-component-1759585534430"),moneyFormat:"%24%7B%7Bamount%7D%7D",options:{product:{styles:{product:{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},title:{"font-family":"Crimson Text, serif"},price:{"font-weight":"bold"},compareAt:{"font-weight":"bold"},unitPrice:{"font-weight":"bold"}},text:{button:"Add to cart"},googleFonts:["Crimson Text"]},productSet:{styles:{products:{"@media (min-width: 601px)":{"margin-left":"-20px"}}}},modalProduct:{contents:{img:!1,imgWithCarousel:!0,button:!1,buttonWithQuantity:!0},styles:{product:{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}},title:{"font-family":"Helvetica Neue, sans-serif","font-weight":"bold","font-size":"26px",color:"#4c4c4c"},price:{"font-family":"Helvetica Neue, sans-serif","font-weight":"normal","font-size":"18px",color:"#4c4c4c"},compareAt:{"font-family":"Helvetica Neue, sans-serif","font-weight":"normal","font-size":"15.299999999999999px",color:"#4c4c4c"},unitPrice:{"font-family":"Helvetica Neue, sans-serif","font-weight":"normal","font-size":"15.299999999999999px",color:"#4c4c4c"}},text:{button:"Add to cart"}},option:{},cart:{text:{total:"Subtotal",button:"Checkout"}},toggle:{}}})})}window.ShopifyBuy&&window.ShopifyBuy.UI?o():t()}()</script>
-
-
-
-
-
-
 
 
 
