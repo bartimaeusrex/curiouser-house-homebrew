@@ -7,14 +7,14 @@ class CHMenu extends HTMLElement {
     <div class="menu center-this">
     
     <div class="stickygrid">
-      <a class="menu-home" href="index.html"><div>HOME</div></a>
-      <a class="menu-merch" href="merch.html"><div>MERCH</div></a>
-      <a class="menu-blog" href="blog.html"><div>BLOG</div></a>
+      <a class="menu-home" href="./"><div>HOME</div></a>
+      <a class="menu-merch" href="./shop"><div>SHOP</div></a>
+      <a class="menu-blog" href="./blog"><div>BLOG</div></a>
     </div>
     <div class="stickygridmobile">
-    <a class="menu-home" href="index.html"><div>HOME</div></a>
-      <a class="menu-merch" href="merch.html"><div>MERCH</div></a>
-      <a class="menu-blog" href="blog.html"><div>BLOG</div></a>
+    <a class="menu-home" href="./"><div>HOME</div></a>
+      <a class="menu-merch" href="./shop"><div>SHOP</div></a>
+      <a class="menu-blog" href="./blog"><div>BLOG</div></a>
     </div>
     
     </div>

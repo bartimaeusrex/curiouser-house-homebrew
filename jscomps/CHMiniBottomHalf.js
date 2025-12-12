@@ -4,7 +4,7 @@ class CHMiniBottomHalf extends HTMLElement {
         super()
         this.innerHTML = `
 
-    <a href="../index.html"><img src="../images/fleuronhouse.png" class="h-2em fleuron center-this" title="decorative fleuron house" /></a>
+    <a href="../"><img src="../images/fleuronhouse.png" class="h-2em fleuron center-this" title="decorative fleuron house" /></a>
 
         <footer class="center-this">
         <a href="https://bookshop.org/shop/curiouserhouse" target="_blank"><img class="h-2em multiply" src="../images/bookshop.png" title="Curiouser House on Bookshop.org" /></a>
