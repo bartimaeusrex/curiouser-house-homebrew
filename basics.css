@@ -57,7 +57,7 @@ p {text-wrap:pretty;}
 .fleuron {padding:2em 0 1em 0;display:block;}
 
 /* 0 is invisible */
-.opacity0 {opacity: 0%;}
+.opacity0, .invisible {opacity: 0%;}
 .opacity10 {opacity: 10%;}
 .opacity20 {opacity: 20%;}
 .opacity30 {opacity: 30%;}

@@ -223,6 +223,21 @@ a .blurb {
   right:.5em;
 }
 
+
+.copyright {
+  background-color:black;
+  color:white;
+  height:2em;
+  padding:1em 0 0 0;
+  font-size:.75em;
+  vertical-align:middle;
+  display:grid;
+}
+
+.copyright::after {
+  content:"© 2026 Curiouser House Publishing";
+}
+
 /* FLEXBOX MIMICKING HORIZONTAL SPINES 
 
 .flex-container {

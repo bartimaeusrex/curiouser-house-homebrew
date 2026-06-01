@@ -15,8 +15,6 @@ class CHMiniBottomHalf extends HTMLElement {
         <br />
             <a href="mailto:publisher@curiouser.house">
             <div class="emaildiv" title="Publisher@Curiouser.House"></div></a>
-        <!--         <br />
-        <img src="../images/copyright2025_typewriter.png" class="h-05em" title="Copyright 2025 Curiouser House Publishing" />-->
         
        <div class="footertown multiply"></div>
         <div class="copyright"></div><!-- Copyright notice in CSS ::after -->

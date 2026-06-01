@@ -36,11 +36,11 @@
 body {
   font-family: 'EB Garamond', serif;
   font-size:1.25em;
+  background-image: linear-gradient(to bottom, rgb(235 235 230 / 100%), transparent), url(images/minimalist_bg.jpg);
   background-color: var(--bg-color);
-  background-position: center;
+  background-position: center, top;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(images/minimalist_bg.jpg);
   align-items: center;
   justify-content: center;
   margin:0;
@@ -105,6 +105,12 @@ a:hover img {background-color:none;}
   background:url("images/bg_title_charlesdickensap00wats_0036.jpg") center no-repeat;
   margin-bottom:2em;
 }
+
+/* background:url("images/bg_title_charlesdickensap00wats_0036.jpg") center no-repeat; 
+
+images/inkanim_greenpaper_dv.gif
+
+*/
 
 /* .subtitle {width:380px;} */
 .subtitlediv {
@@ -379,7 +385,7 @@ footer {
 }
 
 .copyright::after {
-  content:"© 2025 Curiouser House Publishing";
+  content:"© 2026 Curiouser House Publishing";
 }
 
 /* iframe {width:650px;border:0;} */

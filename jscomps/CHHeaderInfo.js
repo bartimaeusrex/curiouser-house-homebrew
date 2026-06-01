@@ -12,6 +12,7 @@ class CHHeaderInfo extends HTMLElement {
     
     <link href="minimalist.css" rel="stylesheet" />
     <link href="basics.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <script defer src="jscomps/CHMiniTopHalfMain.js"></script>
